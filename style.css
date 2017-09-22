@@ -1,0 +1,101 @@
+body{
+  background: url("./background.jpg");
+  background-size: cover;
+  background-repeat: repeat-y;
+  height: 100%;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media screen and (min-width: 1601px){
+  #daily-reading-container {
+    height:100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    color: white;
+  }
+
+  #daily-reading-title {
+    font-size: 3.5em;
+    font-weight: bold;
+    padding: 40px;
+  }
+
+  #daily-reading-content {
+    font-size: 1.8em;
+    line-height: 2em;
+  }
+}
+
+@media screen and (max-width: 1600px){
+  #daily-reading-container {
+    height:100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    color: white;
+  }
+
+  #daily-reading-title {
+    font-size: 3em;
+    font-weight: bold;
+    padding: 30px;
+  }
+
+  #daily-reading-content {
+    font-size: 1.8em;
+    line-height: 1.9em;
+  }
+}
+
+@media screen and (max-width: 1300px){
+  #daily-reading-container {
+    height:100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 66%;
+    margin-left: 17%;
+    color: white;
+  }
+
+  #daily-reading-title {
+    font-size: 2.7em;
+    font-weight: bold;
+    padding: 25px;
+  }
+
+  #daily-reading-content {
+    font-size: 1.7em;
+    line-height: 1.9em;
+  }
+}
+
+@media screen and (max-width: 899px){
+  #daily-reading-container {
+    height:100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    color: white;
+  }
+
+  #daily-reading-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    padding: 25px;
+  }
+
+  #daily-reading-content {
+    font-size: 1.6em;
+    line-height: 1.9em;
+  }
+}
+

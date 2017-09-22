@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Daily Reading",
+  "description": "This extension allows the user to see daily gospel",
+  "version": "0.0.0.4",
+  "chrome_url_overrides" : {
+    "newtab": "newtab.html"
+  },
+  "content_scripts": [ {
+    "js": [ "jquery-3.2.1.min.js", "newtab.js" ],
+    "matches": ["http://*/*", "https://*/*"]
+  }]
+}
