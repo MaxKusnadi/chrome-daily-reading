@@ -1,15 +1,66 @@
-<html>
+<!--<html>-->
+<!--<head>-->
+  <!--<title>New Tab</title>-->
+  <!--<link rel="stylesheet" href="style.css">-->
+  <!--<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="daily-reading-container">-->
+  <!--<div id="daily-reading-title"></div>-->
+  <!--<div id="daily-reading-content"></div>-->
+<!--</div>-->
+<!--</body>-->
+<!--<script src="./jquery-3.2.1.min.js"></script>-->
+<!--<script type="text/javascript" src="newtab.js"></script>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>New Tab</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+  <meta name="description" content="Let's think of a good thing that happened in your life today and pray for those in troubles">
+  <meta name="keywords" content="gratitude, gratitudes, grateful, prayer, prayers">
+  <script src="js/vendor/jquery-3.2.1.min.js"></script>
+  <script src="js/vendor/twemoji.min.js"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/vendor/socket.io.min.js"></script>
+  <script src="js/main.js"></script>
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css"  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="css/vendor/google-font.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>Grateful Today, Grateful Everyday</title>
+  <script type="text/javascript" src="js/gratitude.js"></script>
 </head>
 <body>
-<div id="daily-reading-container">
-  <div id="daily-reading-title"></div>
-  <div id="daily-reading-content"></div>
-</div>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <h1 class='text-center' id="title">What are you thankful for today?</h1>
+    <div class="text-center col-sm-12" id="verse">
+      <!--"Give thanks in all circumstances; for this is the will of God in Christ Jesus for you."<br>-->
+      <!--(1 Thessalonians 5:18)-->
+      <div id="daily-reading-container">
+        <b>Daily Reading</b>
+        <div id="daily-reading-title"></div>
+        <div id="daily-reading-content"></div>
+      </div>
+    </div>
+    <form class='col-sm-12 text-center' id="gratitude" method="POST" action='#'>
+      <div class="col-sm-12">
+        <textarea form="gratitude" name="gratitude_data" id="gratitude_data" placeholder="I am thankful for..."></textarea>
+      </div>
+      <div class="col-sm-12">
+        <input class='btn btn-success' type="submit" value="Share My Gratitude">
+      </div>
+    </form>
+    <div id="log" class="col-sm-6 col-sm-offset-3 text-center"></div>
+  </div>
+</nav>
+<footer>
+  <div id="link" class="col-sm-6 col-sm-offset-3 text-center"><a href="https://imgratefultoday.com:8888">See more</a></div>
+</footer>
+
 </body>
-<script src="./jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="newtab.js"></script>
 </html>
