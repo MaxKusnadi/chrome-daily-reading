@@ -1,14 +1,24 @@
 {
   "manifest_version": 2,
 
-  "name": "Daily Reading",
-  "description": "This extension allows the user to see daily gospel",
-  "version": "0.0.0.5",
+  "name": "Daily Reading and Gratitudes",
+  "description": "This extension allows the user to see daily gospel and post gratitudes anonymously",
+  "version": "0.0.1.0",
   "chrome_url_overrides" : {
     "newtab": "newtab.html"
   },
   "content_scripts": [ {
-    "js": [ "jquery-3.2.1.min.js", "newtab.js" ],
+    "js": [ "./js/vendor/jquery-3.2.1.min.js",
+      "./newtab.js",
+      "./js/vendor/bootstrap.min.js",
+      "./js/vendor/socket.io.min.js",
+      "./js/vendor/twemoji.min.js",
+      "./js/gratitude.js",
+      "./js/main.js"
+    ],
+    "css": ["./css/vendor/bootstrap.min.css",
+    "./css/vendor/google-font.css",
+      "./css/main.css"],
     "matches": ["http://*/*", "https://*/*"]
   }]
 }
