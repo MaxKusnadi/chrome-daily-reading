@@ -3,7 +3,7 @@
 
   "name": "Daily Reading and Gratitudes",
   "description": "This extension allows the user to see daily gospel and post gratitudes anonymously",
-  "version": "0.0.1.0",
+  "version": "0.0.1.1",
   "chrome_url_overrides" : {
     "newtab": "newtab.html"
   },

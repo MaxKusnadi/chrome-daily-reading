@@ -1,16 +1,11 @@
-html, body {
-  height: 100%;
-}
-html {
-  /*overflow-y: hidden;*/
-}
-body{
+.custom-content{
+  height:100%;
   background: black no-repeat;
   background-size: 100%;
   background-image: url("https://images.alphacoders.com/550/550281.jpg");
   background-position: right bottom;
+  padding-top: 30px;
   overflow-y: scroll;
-  padding-top: 70px;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   color: #FFFDFF;
@@ -42,7 +37,7 @@ body{
   text-align: center;
 }
 
-a{
+.custom-content a{
   color: white;
   font-size: 24px;
   padding-top: 30px;
@@ -50,95 +45,95 @@ a{
   text-decoration: underline;
 }
 
-h1 {
+.custom-content h1 {
   font-size:30px;
   font-weight: bold;
 }
 
-form{
+.custom-content form{
   margin-top: 10px;
 }
 
-ul{
+.custom-content ul{
   list-style: none;
   margin-top:20px;
 }
 
-img.emoji {
+.custom-content img.emoji {
   height: 1em;
   width: 1em;
   margin: 0 .05em 0 .1em;
   vertical-align: -0.1em;
 }
 
-.message{
+.custom-content .message{
   padding-top: 25px;
   padding-bottom: 25px;
   word-wrap: break-word;
 }
 
-.border{
+.custom-content .border{
   width: 10%;
   border-bottom: 1px solid #FFFAD2;
   height: 1px;
   margin: 0 auto;
 }
 
-.message .content{
+.custom-content .message .content{
   font-style: italic;
   font-size:22px;
 }
 
-.message .date {
+.custom-content .message .date {
   font-size: 15px;
 }
 
-.btn{
+.custom-content .btn{
   font-size: 18px;
   background-color: #532D1A;
   border-color: black;
 }
 
-.btn-success:hover{
+.custom-content .btn-success:hover{
   background-color: #EEC9A9;
   border-color:black;
   color:black;
 }
 
-.navbar-default {
+.custom-content .navbar-default {
   background-color: transparent;
   border-color: transparent;
   color: white;
 }
 
-.navbar-default .navbar-brand{
+.custom-content .navbar-default .navbar-brand{
   color:white;
   padding-right:10px;
 }
 
-.navbar-default .navbar-brand:hover{
+.custom-content .navbar-default .navbar-brand:hover{
   color: white;
 }
 
-.navbar-default .navbar-nav>li>a{
+.custom-content .navbar-default .navbar-nav>li>a{
   color:white;
   background-color: inherit;
 }
 
-.navbar-default .navbar-nav>li>a:hover{
+.custom-content .navbar-default .navbar-nav>li>a:hover{
   color: white;
   background-color: #532D1A;
 }
 
-.navbar-default .navbar-nav>.active>a{
+.custom-content .navbar-default .navbar-nav>.active>a{
   background-color: #EEC9A9;
 }
 
-.navbar-default .navbar-nav>.active>a:hover{
+.custom-content .navbar-default .navbar-nav>.active>a:hover{
   background-color: #EEC9A9;
 }
 
-textarea{
+.custom-content textarea{
   color: black;
   resize: None;
   width: 650px;
@@ -158,61 +153,61 @@ textarea{
 }
 
 @media (max-width: 768px) {
-  body{
+  .custom-content body{
     padding-top: 60px;
   }
 
-  h1{
+  .custom-content h1{
     font-size: 36px;
   }
 
-  textarea{
+  .custom-content textarea{
     width: 95%;
     height: 280px;
     font-size: 24px;
   }
 
-  .btn{
+  .custom-content .btn{
     font-size: 24px;
   }
 
-  .navbar-header {
+  .custom-content .navbar-header {
     float: none;
   }
-  .navbar-left,.navbar-right {
+  .custom-content .navbar-left,.navbar-right {
     float: none !important;
   }
-  .navbar-toggle {
+  .custom-content .navbar-toggle {
     display: block;
   }
-  .navbar-collapse {
+  .custom-content .navbar-collapse {
     border-top: 1px solid transparent;
     box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
   }
-  .navbar-fixed-top {
+  .custom-content .navbar-fixed-top {
     top: 0;
     border-width: 0 0 1px;
   }
-  .navbar-collapse.collapse {
+  .custom-content .navbar-collapse.collapse {
     display: none!important;
   }
-  .navbar-nav {
+  .custom-content .navbar-nav {
     float: none!important;
     margin-top: 0;
     margin-bottom: 0;
   }
-  .navbar-nav>li {
+  .custom-content .navbar-nav>li {
     float: left;
     height: 49px;
   }
-  .navbar-nav>li>a {
+  .custom-content .navbar-nav>li>a {
     padding-top: 10px;
     padding-bottom: 10px;
   }
-  .collapse.in{
+  .custom-content .collapse.in{
     display:block !important;
   }
-  .navbar-default .navbar-nav>li>a{
+  .custom-content .navbar-default .navbar-nav>li>a{
     color:inherit;
     background-color: inherit;
   }
